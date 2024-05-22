@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Associazione</class>
+ <widget class="QMainWindow" name="Associazione">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,14 +11,21 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Associazione studente-professore</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Downloads/textdocuments_102739.png</normaloff>../../Downloads/textdocuments_102739.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QDialogButtonBox" name="buttonBox_2">
+   <widget class="QDialogButtonBox" name="buttonBoxAssociazione">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>700</y>
+      <y>750</y>
       <width>191</width>
       <height>41</height>
      </rect>
@@ -33,7 +40,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QComboBox" name="comboBoxStudente">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -49,17 +56,22 @@
     </item>
     <item>
      <property name="text">
-      <string>Prova 1</string>
+      <string>Matteo Chiocci</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Prova 2</string>
+      <string>Edoardo Panfili</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Prova 3</string>
+      <string>Samanta Satiri</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Maria Teresa Rughi</string>
      </property>
     </item>
    </widget>
@@ -82,7 +94,7 @@
      <string>Associazione studente-professore</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox_2">
+   <widget class="QComboBox" name="comboBoxInsegnante">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -98,25 +110,30 @@
     </item>
     <item>
      <property name="text">
-      <string>Prova 1</string>
+      <string>David Stocchi</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Prova 2</string>
+      <string>Marco Meletti</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Prova 3</string>
+      <string>Valeria Giovannini</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Matteo Picciolini</string>
      </property>
     </item>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="labelAssociazione">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>680</y>
+      <y>730</y>
       <width>201</width>
       <height>16</height>
      </rect>
@@ -140,7 +157,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="labelInsegnante">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -153,13 +170,14 @@
      <font>
       <family>Bahnschrift</family>
       <pointsize>12</pointsize>
+      <bold>true</bold>
      </font>
     </property>
     <property name="text">
      <string>Inserire il nominativo dell'insegnante</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="labelStudente">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -172,13 +190,14 @@
      <font>
       <family>Bahnschrift</family>
       <pointsize>12</pointsize>
+      <bold>true</bold>
      </font>
     </property>
     <property name="text">
      <string>Inserire il nominativo dello studente</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="labelOreRimanenti">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -197,11 +216,11 @@
      <string>Ore rimanenti dell'insegnante:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="labelOreDaAssegnar">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>600</y>
+      <y>650</y>
       <width>261</width>
       <height>21</height>
      </rect>
@@ -216,17 +235,17 @@
      <string>Ore da assegnare:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="lineEditOre">
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>600</y>
+      <y>650</y>
       <width>113</width>
       <height>22</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="labelOre">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -242,7 +261,7 @@
      </font>
     </property>
     <property name="text">
-     <string>120</string>
+     <string>18</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
@@ -265,6 +284,90 @@
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelInseriemntoVeloceStudente">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>530</y>
+      <width>301</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Inserimento veloce </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelInserimentoVeloceInsegnante">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>301</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Inserimento veloce </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditStudente">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>560</y>
+      <width>301</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditInsegnanti">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>260</y>
+      <width>301</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonStudente">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>560</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>cerca</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonInsegnante">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>260</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>cerca</string>
     </property>
    </widget>
   </widget>
