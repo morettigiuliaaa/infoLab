@@ -21,25 +21,6 @@
    <double>1.000000000000000</double>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QDialogButtonBox" name="buttonBoxAssociazione">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>750</y>
-      <width>191</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-    <property name="standardButtons">
-     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Yes</set>
-    </property>
-    <property name="centerButtons">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QComboBox" name="comboBoxStudente">
     <property name="geometry">
      <rect>
@@ -52,26 +33,6 @@
     <item>
      <property name="text">
       <string/>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Matteo Chiocci</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Edoardo Panfili</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Samanta Satiri</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Maria Teresa Rughi</string>
      </property>
     </item>
    </widget>
@@ -108,32 +69,12 @@
       <string/>
      </property>
     </item>
-    <item>
-     <property name="text">
-      <string>David Stocchi</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Marco Meletti</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Valeria Giovannini</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Matteo Picciolini</string>
-     </property>
-    </item>
    </widget>
    <widget class="QLabel" name="labelAssociazione">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>730</y>
+      <y>700</y>
       <width>201</width>
       <height>16</height>
      </rect>
@@ -248,7 +189,7 @@
    <widget class="QLabel" name="labelOre">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>250</x>
       <y>310</y>
       <width>61</width>
       <height>31</height>
@@ -368,6 +309,19 @@
     </property>
     <property name="text">
      <string>cerca</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonYes">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>730</y>
+      <width>181</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Yes</string>
     </property>
    </widget>
   </widget>
